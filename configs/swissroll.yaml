@@ -1,0 +1,35 @@
+dataset: swissroll
+exp_root_dir: ./results/{dataset}/{timestamp}
+debug: false
+
+# train params
+learning_rate: 5.e-5
+n_epochs: 20000
+print_steps: 1000
+log_steps: 1000
+save_steps: 1000
+device: cuda:0 #'cpu' or 'cuda:0', 'cuda:1' etc for single gpu, or a list of device ids for multi-gpu, eg: [0,1,2] when using 3 GPUs
+loss_function: LSIF
+scheduler_gamma: 0.1
+scheduler_steps: [5000, 10000, 15000] # list of training steps where lr = lr * gamma
+
+# dataset params
+train_batch_size: 1024
+test_batch_size: 1024
+
+# gradient flow params
+f_divergence: Pearson
+eta: 1.
+noise_factor: 1.e-2
+
+# model parameters
+in_dim: 2
+n_hidden_layers: 3
+hidden_dim: 64
+ema: true
+ema_rate: 0.998
+spectral_norm: false
+n_flow_steps: 200
+
+# misc
+wandb_notes: NIL

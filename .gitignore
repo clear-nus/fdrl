@@ -1,0 +1,14 @@
+__pycache__/
+.vscode/
+results/
+wandb/
+*.pt
+*.ipynb
+.ipynb_checkpoints/
+samples/
+_cache_*
+paper_figures/
+*.zip
+*.npz
+iccv_figures/
+*.pickle

@@ -1,0 +1,37 @@
+data_dir: ./data
+dataset: cifar10
+exp_root_dir: ./results/{dataset}/{timestamp}
+use_wandb: false
+
+# train params
+learning_rate: 1.e-4
+n_epochs: 100000
+print_steps: 1000
+log_steps: 1000
+save_steps: 1000
+device: [0, 1] #'cpu' or 'cuda:0', 'cuda:1' etc for single gpu, or a list of device ids for multi-gpu, eg: [0,1,2] when using 3 GPUs
+loss_function: LSIF
+scheduler_gamma: 0.1
+scheduler_steps: [80000, 90000] # list of training steps where lr = lr * gamma
+
+# dataset params
+img_size: 32
+n_channels: 3
+train_batch_size: 64
+test_batch_size: 64
+
+# gradient flow params
+f_divergence: Pearson
+eta: 3.
+noise_factor: 1.e-2
+
+# model parameters
+model: resnet
+ema: true
+ema_rate: 0.998
+spectral_norm: true
+n_flow_steps: 100
+self_attn: false
+
+# misc
+wandb_notes: NIL
