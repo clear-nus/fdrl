@@ -1,5 +1,17 @@
+<div align="center">
+
 # Generative Modeling with Flow-Guided Density Ratio Learning
-____
+
+[![preprint](https://img.shields.io/static/v1?label=arXiv&message=2301.11308&color=B31B1B)](https://arxiv.org/abs/2303.03714)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+</div>
+
+<p align="center">
+  <img src="./assets/fig1.png" width="70%">
+  <br />
+  <span>Left: Illustration of FDRL's training setup for the tau training iteration. For clarity, we emphasize the choices of the f-divergence and g, the Bregman divergence function, as part of training. Right: the various applications of FDRL, ranging from unconditional image generation to class-conditional generation by composition with external classifiers and unpaired image-to-image translation. </span>
+</p>
 
 ## Setup
 There are a few setup steps to run through before we can start training and evaluating models. 
@@ -56,4 +68,19 @@ After you have done so, you can perform conditional generation by using your CIF
 ### Image-to-image Translation
 To run some test examples for image-to-image translation on the Cat2dog dataset, simply follow the instructions in the `eval_im2im_translation.ipynb` notebook.
 
+## Pretrained Checkpoints
+COMING SOON!
 
+## Contact
+If you have any questions regarding the code or the paper, please email [Alvin](mailto:alvinh@comp.nus.edu.sg).
+
+## BibTeX
+If you find this repository or the ideas presented in our paper useful, please consider citing.
+```
+@article{heng2023generative,
+  title={Generative Modeling with Flow-Guided Density Ratio Learning},
+  author={Heng, Alvin and Ansari, Abdul Fatir and Soh, Harold},
+  journal={arXiv preprint arXiv:2303.03714},
+  year={2023}
+}
+```
