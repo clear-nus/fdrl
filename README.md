@@ -8,7 +8,7 @@
 </div>
 
 <p align="center">
-  <img src="./assets/fig1.png" width="70%">
+  <img src="./assets/fig1.png" width="85%">
   <br />
   <span>Left: Illustration of FDRL's training setup for the tau training iteration. For clarity, we emphasize the choices of the f-divergence and g, the Bregman divergence function, as part of training. Right: the various applications of FDRL, ranging from unconditional image generation to class-conditional generation by composition with external classifiers and unpaired image-to-image translation. </span>
 </p>
