@@ -56,7 +56,7 @@ python train_im2im_translation.py --config ./configs/cat2dog.yaml --device <cuda
 ### Unconditional Generation and FID Scores
 To evaluate the model for unconditional generation using DDP, run
 ```bash
-python eval_ddp.py --ckpt <path/to/checkpoint> --device
+python eval_ddp.py --ckpt <path/to/checkpoint> --device <cuda:0, cuda:1 etc>
 ```
 It will save some samples of generated images in the `samples` folder. For CIFAR10 and CelebA, this will generate 50K images and compare the activation statistcs of the `pool3` layer in the InceptionV3 network with those calculated when running `eval_setup.py` earlier.
 
@@ -69,7 +69,7 @@ After you have done so, you can perform conditional generation by using your CIF
 To run some test examples for image-to-image translation on the Cat2dog dataset, simply follow the instructions in the `eval_im2im_translation.ipynb` notebook.
 
 ## Pretrained Checkpoints
-COMING SOON!
+Checkpoints available under [releases](https://github.com/ajrheng/FDRL/releases).
 
 ## Contact
 If you have any questions regarding the code or the paper, please email [Alvin](mailto:alvinh@comp.nus.edu.sg).
