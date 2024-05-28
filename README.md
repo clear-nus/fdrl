@@ -4,6 +4,7 @@
 
 [![preprint](https://img.shields.io/static/v1?label=arXiv&message=2301.11308&color=B31B1B)](https://arxiv.org/abs/2303.03714)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Venue:ECML/PKDD 2024](https://img.shields.io/badge/Venue-ECML/PKDD%202024-007CFF)]([https://opensource.org/licenses/MIT](https://ecmlpkdd.org/2024/))
 
 </div>
 
