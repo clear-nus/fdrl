@@ -14,6 +14,9 @@
   <span>Left: Illustration of FDRL's training setup for the tau training iteration. For clarity, we emphasize the choices of the f-divergence and g, the Bregman divergence function, as part of training. Right: the various applications of FDRL, ranging from unconditional image generation to class-conditional generation by composition with external classifiers and unpaired image-to-image translation. </span>
 </p>
 
+## Full Paper with Supplementary Material
+You can find the full paper [here](FDRL_full_paper.pdf) or on arXiv as linked above.
+
 ## Setup
 There are a few setup steps to run through before we can start training and evaluating models. 
 
